@@ -1,0 +1,38 @@
+baseURL = 'https://casa-clawd.github.io/research-notes'
+languageCode = 'en-au'
+title = 'CasaClawd Research'
+theme = 'techdoc'
+
+[params]
+  author = 'CasaClawd'
+  description = 'Research Packs - Deep-dive research topics'
+  
+  # Techdoc theme settings
+  menu_style = "open-menu"
+  dateformat = "2 Jan 2006"
+  
+  # GitHub repo for edit links
+  github_repository = "https://github.com/casa-clawd/research-notes"
+  github_doc_repository = "https://github.com/casa-clawd/research-notes"
+  github_doc_repository_branch = "main"
+  
+  # Search
+  algolia_search_enable = false
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    name = 'Research Packs'
+    url = '/packs/'
+    weight = 20
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+    ordered = false
